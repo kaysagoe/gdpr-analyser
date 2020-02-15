@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+
+<body style="height: 100%;">
+    <div style="height: 100%;width: 100%;">
+        <div class="container" style="margin-right: 0;margin-left: 0;padding-right: 0;padding-left: 0;max-width: 100%;height: 100%;">
+            <div class="row" style="margin-right: 0;margin-left: 0;height: 100%;">
+                <div class="col-7 col-md-8 col-xl-3" style="background-color: #191919;padding-left: 0;padding-right: 0;padding-top: 0;padding-bottom: 0;height: 100%;margin-top: 0px;min-height: 100%;">
+                    <h1 style="color: #ffffff;font-size: 14px;font-family: 'Open Sans', sans-serif;font-weight: 700;font-style: normal;margin-bottom: 0px;padding: 20px;background-color: #111111;">GDPR ANALYSER</h1>
+                    <div style="padding: 20px;"><a class="d-block" href="#accordion-1 .item-1" style="padding: 0px;color: #ffffff;font-size: 14px;font-family: 'Open Sans', sans-serif;padding-bottom: 0px;height: 34px;" data-toggle="collapse">Status Codes</a>
+                        <h2 style="font-size: 14px;color: #888888;font-family: 'Open Sans', sans-serif;font-weight: 700;padding: 0px;margin-bottom: 0px;">Endpoints</h2>
+                        <div style="padding-left: 20px;font-size: 14px;color: #ffffff;font-family: 'Open Sans', sans-serif;padding-top: 10px;"><a class="d-block" data-toggle="collapse" style="color: #ffffff;margin-bottom: 10px;" aria-expanded="true" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2">Analyse privacy policy for GDPR Requirements</a><a class="d-block"
+                                href="#accordion-1 .item-3" style="color: #ffffff;margin-bottom: 10px;" data-toggle="collapse">Annotate privacy policy with categories and attributes</a><a class="d-block" href="#accordion-1 .item-4" style="color: #ffffff;"
+                                data-toggle="collapse">Get details about category/attribute</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-9">
+                    <div role="tablist" id="accordion-1">
+                        <div class="card" style="margin-top: 15px;margin-bottom: 15px;">
+                            <div class="card-header" role="tab" style="background-color: #333333;">
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1" style="color: #ffffff;font-size: 16px;">Status Codes</a></h5>
+                            </div>
+                            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <div class="table-responsive table-borderless" style="font-family: 'Open Sans', sans-serif;font-size: 14px;">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>HTTP Status</th>
+                                                    <th>Description</th>
+                                                    <th>Error Code</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>200</td>
+                                                    <td>Success</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>400</td>
+                                                    <td>No request arguments entered</td>
+                                                    <td>Invalid Input</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>400</td>
+                                                    <td>Invalid URL input string</td>
+                                                    <td>Invalid Input</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>400</td>
+                                                    <td>URL returned empty source</td>
+                                                    <td>Invalid Input</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>400</td>
+                                                    <td>URL returned 404 error code</td>
+                                                    <td>Invalid Input</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>500</td>
+                                                    <td>Internal Server Error</td>
+                                                    <td>Internal Server Error</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-top: 15px;margin-bottom: 15px;">
+                            <div class="card-header" role="tab" style="background-color: #333333;">
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2" style="color: #ffffff;font-size: 16px;">Analyse privacy policy for GDPR requirements</a><code class="float-right"
+                                        style="color: #45c83a;font-size: 16px;margin-top: 1px;font-family: 'IBM Plex Mono', monospace;">/api/analyse</code><span class="badge badge-primary float-right" style="margin-right: 10px;background-color: #45c83a;">POST</span></h5>
+                            </div>
+                            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <h2 style="font-size: 22px;font-weight: 700;">Request</h2>
+                                    <div class="table-responsive table-borderless" style="font-size: 14px;font-family: 'Open Sans', sans-serif;">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Field</th>
+                                                    <th>Type</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>url</td>
+                                                    <td>string</td>
+                                                    <td>The URL of the privacy policy in which the GDPR requirement analysis is to be performed on. The url should be in the form of http(s)://www.example.com/privacy</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h2 style="font-size: 22px;font-weight: 700;">Response Format</h2>
+                                    <p class="d-block" style="margin: 0px;padding: 15px;font-family: 'IBM Plex Mono', monospace;color: #546974;background-color: #eef1f2;font-size: 14px;">{<br>&nbsp; &nbsp; "purposes_of_processing_user_data": {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp;
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "data_categories_collected":
+                                        {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "recipients_of_user_data": {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp;
+                                        &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "right_to_withdraw_consent_from_processing": {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp;
+                                        &nbsp; &nbsp; ]<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "ways_policy_changes_are_communicated": {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; }<br>}<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-top: 15px;margin-bottom: 15px;">
+                            <div class="card-header" role="tab" style="background-color: #333333;">
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="#accordion-1 .item-3" style="color: #ffffff;font-size: 16px;">Annotate privacy policy with categories and attributes</a><code class="float-right"
+                                        style="color: #45c83a;font-size: 16px;margin-top: 1px;font-family: 'IBM Plex Mono', monospace;">/api/annotate</code><span class="badge badge-primary float-right" style="margin-right: 10px;background-color: #45c83a;">POST</span></h5>
+                            </div>
+                            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <h2 style="font-size: 22px;font-weight: 700;">Request</h2>
+                                    <div class="table-responsive table-borderless" style="font-size: 14px;font-family: 'Open Sans', sans-serif;">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Field</th>
+                                                    <th>Type</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>url</td>
+                                                    <td>string</td>
+                                                    <td>The URL of the privacy policy in which the annotation is to be performed on. The url should be in the form of http(s)://www.example.com/privacy</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h2 style="font-size: 22px;font-weight: 700;">Response Format</h2>
+                                    <p class="d-block" style="margin: 0px;padding: 15px;font-family: 'IBM Plex Mono', monospace;color: #546974;background-color: #eef1f2;font-size: 14px;">{<br>&nbsp; &nbsp; "purposes_of_processing_user_data": {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp;
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "data_categories_collected":
+                                        {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "recipients_of_user_data": {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp;
+                                        &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "right_to_withdraw_consent_from_processing": {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp;
+                                        &nbsp; &nbsp; ]<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; "ways_policy_changes_are_communicated": {<br>&nbsp; &nbsp; &nbsp; &nbsp; [<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp; &nbsp; &nbsp; "name": ....,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sources": [....]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; }<br>}<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-top: 15px;margin-bottom: 15px;">
+                            <div class="card-header" role="tab" style="background-color: #333333;">
+                                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-4" href="#accordion-1 .item-4" style="color: #ffffff;font-size: 16px;">Get details about category/attribute</a><code class="float-right" style="color: #45c83a;font-size: 16px;margin-top: 1px;font-family: 'IBM Plex Mono', monospace;">/api/help/:key</code>
+                                    <span
+                                        class="badge badge-primary float-right" style="margin-right: 10px;background-color: #45c83a;">POST</span>
+                                </h5>
+                            </div>
+                            <div class="collapse item-4" role="tabpanel" data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <h2 style="font-size: 22px;font-weight: 700;">Request</h2>
+                                    <div class="table-responsive table-borderless" style="font-size: 14px;font-family: 'Open Sans', sans-serif;">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Field</th>
+                                                    <th>Type</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>key</td>
+                                                    <td>string</td>
+                                                    <td>The name of the category or attribute</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h2 style="font-size: 22px;font-weight: 700;">Response Format</h2>
+                                    <p class="d-block" style="margin: 0px;padding: 15px;font-family: 'IBM Plex Mono', monospace;color: #546974;background-color: #eef1f2;font-size: 14px;">{<br>&nbsp; &nbsp; "key": .....,<br>&nbsp; &nbsp; "description": ....<br>}<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
